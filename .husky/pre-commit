@@ -1,0 +1,6 @@
+if git diff --cached --name-only --diff-filter=ACMR | grep -q '^client/'; then
+  echo "client changes detected, running client lint tests..."
+  npm --prefix client run lint
+else
+  echo "no staged changes in client/, skipping client tests."
+fi
