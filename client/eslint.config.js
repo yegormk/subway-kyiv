@@ -32,15 +32,7 @@ module.exports = defineConfig([
           "style": "kebab-case"
         }
       ],
-      "@typescript-eslint/quotes": [
-        "error",
-        "single",
-        {
-          "allowTemplateLiterals": true
-        }
-      ],
-      "object-curly-spacing": ["error", "always"],
-      "unused-imports/no-unused-imports": ["error"]
+      "object-curly-spacing": ["error", "always"]
     },
   },
   {
@@ -49,17 +41,6 @@ module.exports = defineConfig([
       angular.configs.templateRecommended,
       angular.configs.templateAccessibility,
       eslintPluginPrettierRecommended
-    ],
-    rules: {
-      '@angular-eslint/template/indent': [
-        'error',
-        {
-          indentChains: true,
-          indentSwitchCase: 1,
-          alignAttributesVertically: true,
-          indentation: 2
-        }
-      ]
-    },
+    ]
   }
 ]);

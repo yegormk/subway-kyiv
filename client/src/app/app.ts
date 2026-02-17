@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, inject, OnInit, signal} from '@angular/core';
+import { AfterViewInit, Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
@@ -13,9 +13,8 @@ import { MetroLine } from './interfaces/metro-line';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App implements OnInit, AfterViewInit {
-  // protected readonly title = signal('client');
-  private map!: any;
+export class App implements AfterViewInit {
+  private map!: maplibregl.Map;
   readonly dialog = inject(MatDialog);
 
   private readonly metroLines: MetroLine[] = [
@@ -249,15 +248,9 @@ export class App implements OnInit, AfterViewInit {
     }
   ];
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
   ngAfterViewInit() {
     this.initMap();
   }
-
 
   private initMap() {
     this.map = new maplibregl.Map({
@@ -268,7 +261,7 @@ export class App implements OnInit, AfterViewInit {
     });
 
     this.map.on('load', () => {
-      this.metroLines.forEach((line, index) => {
+      this.metroLines.forEach((line) => {
         const normalizedName = line.name.toLowerCase().replace(/\s+/g, '-');
         const sourceId = `${normalizedName}-source`;
         const layerId = `${normalizedName}-layer`;

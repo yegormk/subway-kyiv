@@ -2,5 +2,11 @@
   "dependencies": {
     "@types/leaflet": "^1.9.21",
     "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
+  },
+  "scripts": {
+    "prepare": "husky"
   }
 }
