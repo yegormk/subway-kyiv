@@ -1,21 +1,23 @@
 import { AfterViewInit, Component, inject } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import maplibregl from 'maplibre-gl';
 
 import { StationInfo } from './modal-windows/station-info/station-info';
 import { MetroLine } from './interfaces/metro-line';
+import { SubwayStation } from './interfaces/subway-station';
+import { StationsService } from './services/stations-service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MatDialogModule, MatButtonModule],
+  imports: [MatDialogModule, MatButtonModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App implements AfterViewInit {
   private map!: maplibregl.Map;
   readonly dialog = inject(MatDialog);
+  private stationsService = inject(StationsService);
 
   private readonly metroLines: MetroLine[] = [
     {
@@ -90,26 +92,26 @@ export class App implements AfterViewInit {
         [30.64597, 50.46476],       // Lisova
         [30.64680310682197, 50.46509094180721],
       ],
-      subwayStations: [
-        { name: 'Akademmistechko', coordinates: [30.355, 50.465556] },
-        { name: 'Zhytomyrska', coordinates: [30.364167, 50.455833] },
-        { name: 'Sviatoshyn', coordinates: [30.390556, 50.457778] },
-        { name: 'Nyvky', coordinates: [30.404042, 50.458653] },
-        { name: 'Beresteiska', coordinates: [30.41969, 50.45909] },
-        { name: 'Shuliavska', coordinates: [30.44537, 50.45508] },
-        { name: 'Politekhnichnyi Instytut', coordinates: [30.46613, 50.45079] },
-        { name: 'Vokzalna', coordinates: [30.490003353873735, 50.44127133843766] },
-        { name: 'Universytet', coordinates: [30.50461527977074, 50.44334264991407] },
-        { name: 'Teatralna', coordinates: [30.518056, 50.445278] },
-        { name: 'Khreshchatyk', coordinates: [30.522767783097787, 50.44723753330851] },
-        { name: 'Arsenalna', coordinates: [30.54556, 50.4444] },
-        { name: 'Dnipro', coordinates: [30.559414569923753, 50.441204032241714] },
-        { name: 'Hidropark', coordinates: [30.576907245863822, 50.44597200592097] },
-        { name: 'Livoberezhna', coordinates: [30.59817, 50.45186] },
-        { name: 'Darnytsia', coordinates: [30.612953196812015, 50.45599447798862] },
-        { name: 'Chernihivska', coordinates: [30.629722, 50.459722] },
-        { name: 'Lisova', coordinates: [30.64597, 50.46476] }
-      ]
+      // subwayStations: [
+      //   { name: 'Akademmistechko', coordinates: [30.355, 50.465556] },
+      //   { name: 'Zhytomyrska', coordinates: [30.364167, 50.455833] },
+      //   { name: 'Sviatoshyn', coordinates: [30.390556, 50.457778] },
+      //   { name: 'Nyvky', coordinates: [30.404042, 50.458653] },
+      //   { name: 'Beresteiska', coordinates: [30.41969, 50.45909] },
+      //   { name: 'Shuliavska', coordinates: [30.44537, 50.45508] },
+      //   { name: 'Politekhnichnyi Instytut', coordinates: [30.46613, 50.45079] },
+      //   { name: 'Vokzalna', coordinates: [30.490003353873735, 50.44127133843766] },
+      //   { name: 'Universytet', coordinates: [30.50461527977074, 50.44334264991407] },
+      //   { name: 'Teatralna', coordinates: [30.518056, 50.445278] },
+      //   { name: 'Khreshchatyk', coordinates: [30.522767783097787, 50.44723753330851] },
+      //   { name: 'Arsenalna', coordinates: [30.54556, 50.4444] },
+      //   { name: 'Dnipro', coordinates: [30.559414569923753, 50.441204032241714] },
+      //   { name: 'Hidropark', coordinates: [30.576907245863822, 50.44597200592097] },
+      //   { name: 'Livoberezhna', coordinates: [30.59817, 50.45186] },
+      //   { name: 'Darnytsia', coordinates: [30.612953196812015, 50.45599447798862] },
+      //   { name: 'Chernihivska', coordinates: [30.629722, 50.459722] },
+      //   { name: 'Lisova', coordinates: [30.64597, 50.46476] }
+      // ]
     },
     {
       name: 'Blue Line',
@@ -162,26 +164,26 @@ export class App implements AfterViewInit {
         [30.454037, 50.367],        // Teremky
         [30.45309622330662, 50.36637640617674],
       ],
-      subwayStations: [
-        { name: 'Heroiv Dnipra', coordinates: [30.4989, 50.52267] },
-        { name: 'Minska', coordinates: [30.498333, 50.512222] },
-        { name: 'Obolon', coordinates: [30.49822, 50.50153] },
-        { name: 'Pochaina', coordinates: [30.497778, 50.486667] },
-        { name: 'Tarasa Shevchenka', coordinates: [30.503611, 50.473889] },
-        { name: 'Kontraktova Ploshcha', coordinates: [30.516667, 50.465278] },
-        { name: 'Poshtova Ploshcha', coordinates: [30.524308, 50.45933] },
-        { name: 'Maidan Nezalezhnosti', coordinates: [30.524923, 50.450352] },
-        { name: 'Ploshcha Ukrainskykh Heroiv', coordinates: [30.516944, 50.439444] },
-        { name: 'Olimpiiska', coordinates: [30.516605, 50.432131] },
-        { name: 'Palats Ukraina', coordinates: [30.52131, 50.42068] },
-        { name: 'Lybidska', coordinates: [30.524909649173303, 50.41400731599101] },
-        { name: 'Demiivska', coordinates: [30.516860956097474, 50.404732512397366] },
-        { name: 'Holosiivska', coordinates: [30.508149071241498, 50.39735863749775] },
-        { name: 'Vasylkivska', coordinates: [30.488223, 50.393335] },
-        { name: 'Vystavkovyi Tsentr', coordinates: [30.477536, 50.382581] },
-        { name: 'Ipodrom', coordinates: [30.468886, 50.3766] },
-        { name: 'Teremky', coordinates: [30.454037, 50.367] }
-      ]
+      // subwayStations: [
+      //   { name: 'Heroiv Dnipra', coordinates: [30.4989, 50.52267] },
+      //   { name: 'Minska', coordinates: [30.498333, 50.512222] },
+      //   { name: 'Obolon', coordinates: [30.49822, 50.50153] },
+      //   { name: 'Pochaina', coordinates: [30.497778, 50.486667] },
+      //   { name: 'Tarasa Shevchenka', coordinates: [30.503611, 50.473889] },
+      //   { name: 'Kontraktova Ploshcha', coordinates: [30.516667, 50.465278] },
+      //   { name: 'Poshtova Ploshcha', coordinates: [30.524308, 50.45933] },
+      //   { name: 'Maidan Nezalezhnosti', coordinates: [30.524923, 50.450352] },
+      //   { name: 'Ploshcha Ukrainskykh Heroiv', coordinates: [30.516944, 50.439444] },
+      //   { name: 'Olimpiiska', coordinates: [30.516605, 50.432131] },
+      //   { name: 'Palats Ukraina', coordinates: [30.52131, 50.42068] },
+      //   { name: 'Lybidska', coordinates: [30.524909649173303, 50.41400731599101] },
+      //   { name: 'Demiivska', coordinates: [30.516860956097474, 50.404732512397366] },
+      //   { name: 'Holosiivska', coordinates: [30.508149071241498, 50.39735863749775] },
+      //   { name: 'Vasylkivska', coordinates: [30.488223, 50.393335] },
+      //   { name: 'Vystavkovyi Tsentr', coordinates: [30.477536, 50.382581] },
+      //   { name: 'Ipodrom', coordinates: [30.468886, 50.3766] },
+      //   { name: 'Teremky', coordinates: [30.454037, 50.367] }
+      // ]
     },
     {
       name: 'Green Line',
@@ -227,24 +229,24 @@ export class App implements AfterViewInit {
         [30.432792261054985, 50.47675462815944],     // Syrets
         [30.43073573224831, 50.47631149787516],
       ],
-      subwayStations: [
-        { name: 'Chervonyi Khutir', coordinates: [30.694444, 50.408889] },
-        { name: 'Boryspilska', coordinates: [30.684411, 50.403479] },
-        { name: 'Vyrlytsia', coordinates: [30.666111, 50.403333] },
-        { name: 'Kharkivska', coordinates: [30.652222, 50.400833] },
-        { name: 'Pozniaky', coordinates: [30.633333, 50.398056] },
-        { name: 'Osokorky', coordinates: [30.615833, 50.395556] },
-        { name: 'Slavutych', coordinates: [30.604864, 50.394217] },
-        { name: 'Vydubychi', coordinates: [30.560833, 50.402222] },
-        { name: 'Zvirynetska', coordinates: [30.545, 50.418056] },
-        { name: 'Pecherska', coordinates: [30.540119, 50.426553] },
-        { name: 'Klovska', coordinates: [30.53192, 50.43693] },
-        { name: 'Palats Sportu', coordinates: [30.521519, 50.438371] },
-        { name: 'Zoloti Vorota', coordinates: [30.513333, 50.448333] },
-        { name: 'Lukianivska', coordinates: [30.48194, 50.4625] },
-        { name: 'Dorohozhychi', coordinates: [30.449167, 50.473611] },
-        { name: 'Syrets', coordinates: [30.432792261054985, 50.47675462815944] }
-      ]
+      // subwayStations: [
+      //   { name: 'Chervonyi Khutir', coordinates: [30.694444, 50.408889] },
+      //   { name: 'Boryspilska', coordinates: [30.684411, 50.403479] },
+      //   { name: 'Vyrlytsia', coordinates: [30.666111, 50.403333] },
+      //   { name: 'Kharkivska', coordinates: [30.652222, 50.400833] },
+      //   { name: 'Pozniaky', coordinates: [30.633333, 50.398056] },
+      //   { name: 'Osokorky', coordinates: [30.615833, 50.395556] },
+      //   { name: 'Slavutych', coordinates: [30.604864, 50.394217] },
+      //   { name: 'Vydubychi', coordinates: [30.560833, 50.402222] },
+      //   { name: 'Zvirynetska', coordinates: [30.545, 50.418056] },
+      //   { name: 'Pecherska', coordinates: [30.540119, 50.426553] },
+      //   { name: 'Klovska', coordinates: [30.53192, 50.43693] },
+      //   { name: 'Palats Sportu', coordinates: [30.521519, 50.438371] },
+      //   { name: 'Zoloti Vorota', coordinates: [30.513333, 50.448333] },
+      //   { name: 'Lukianivska', coordinates: [30.48194, 50.4625] },
+      //   { name: 'Dorohozhychi', coordinates: [30.449167, 50.473611] },
+      //   { name: 'Syrets', coordinates: [30.432792261054985, 50.47675462815944] }
+      // ]
     }
   ];
 
@@ -265,8 +267,6 @@ export class App implements AfterViewInit {
         const normalizedName = line.name.toLowerCase().replace(/\s+/g, '-');
         const sourceId = `${normalizedName}-source`;
         const layerId = `${normalizedName}-layer`;
-
-        const colorOfLane = line.name.split(" ")[0].toLowerCase();
 
         this.map.addSource(sourceId, {
           'type': 'geojson',
@@ -294,29 +294,58 @@ export class App implements AfterViewInit {
           }
         });
 
-        line.subwayStations.forEach(station => {
-          const el = document.createElement('div');
-          el.className = 'marker';
-          el.style.backgroundImage = `url('./assets/${ colorOfLane }_m.png')`;
-          el.style.backgroundSize = 'contain';
-          el.style.width = `20px`;
-          el.style.height = `15px`;
-          el.style.cursor = 'pointer';
+        this.stationsService.loadSubwayStations().subscribe((value: SubwayStation[]) => {
+          console.log('Value:', value);
 
-          el.addEventListener('click', () => {
-            this.dialog.open(StationInfo, {
-              width: '550px',
-              data: {
-                name: station.name,
-              },
+          value.forEach(station => {
+            const el = document.createElement('div');
+            el.className = 'marker';
+            el.style.backgroundImage = `url('./assets/${ station.branch }_m.png')`;
+            el.style.backgroundSize = 'contain';
+            el.style.width = `20px`;
+            el.style.height = `15px`;
+            el.style.cursor = 'pointer';
+
+            el.addEventListener('click', () => {
+              this.dialog.open(StationInfo, {
+                width: '550px',
+                data: {
+                  name: station.name,
+                },
+              });
             });
+
+            new maplibregl.Marker({ element: el })
+              .setLngLat(station.coordinates)
+              .addTo(this.map);
           });
 
-          new maplibregl.Marker({ element: el })
-            .setLngLat(station.coordinates)
-            .addTo(this.map);
+          // if (!value.length) {
+          //   this.saveStationsToBackend();
+          // }
         });
       });
     });
   }
+
+
+  // private saveStationsToBackend(): void {
+  //   this.metroLines.forEach((line) => {
+  //
+  //     const colorOfLane = line.name.split(" ")[0].toLowerCase();
+  //
+  //
+  //     line.subwayStations.forEach(station => {
+  //
+  //       this.http.post('http://localhost:3000/stations', {
+  //         name: station.name,
+  //         coordinates: station.coordinates,
+  //         description: 'Nice station',
+  //         branch: colorOfLane
+  //       }).subscribe((value) => {
+  //         console.log('Value:', value);
+  //       });
+  //     });
+  //   });
+  // }
 }
