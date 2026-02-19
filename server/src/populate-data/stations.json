@@ -1,0 +1,470 @@
+[
+  {
+    "name": "Akademmistechko",
+    "coordinates": [
+      30.355,
+      50.465556
+    ],
+    "description": "Akademmistechko opened on 24 May 2003 when the Sviatoshynsko–Brovarska line was pushed west to serve Kyiv's scientific campus. The shallow 12-metre station anchors the western terminus and funnels commuter buses from the Zhytomyr highway into the metro network.",
+    "branch": "red"
+  },
+  {
+    "name": "Zhytomyrska",
+    "coordinates": [
+      30.364167,
+      50.455833
+    ],
+    "description": "Zhytomyrska also entered service on 24 May 2003 beneath Peremohy Avenue as a gateway for drivers arriving from Zhytomyr Oblast. Its simple single-vault hall keeps the station bright while a park-and-ride loop and marshrutka bays ring the vestibule.",
+    "branch": "red"
+  },
+  {
+    "name": "Sviatoshyn",
+    "coordinates": [
+      30.390556,
+      50.457778
+    ],
+    "description": "Sviatoshyn began operating on 5 November 1971 during the line's first postwar western extension. A covered pedestrian bridge leads directly to the Sviatoshyn suburban rail platforms, making the 12-metre-deep station a key transfer point for commuters from the satellite towns.",
+    "branch": "red"
+  },
+  {
+    "name": "Nyvky",
+    "coordinates": [
+      30.404042,
+      50.458653
+    ],
+    "description": "Nyvky opened on 5 November 1971 to serve the leafy Nyvky residential microdistrict and adjacent park. The 17-metre-deep single-vault design keeps noise down for the housing blocks above and showcases the curly metal light fixtures typical of early-1970s Kyiv Metro architecture.",
+    "branch": "red"
+  },
+  {
+    "name": "Beresteiska",
+    "coordinates": [
+      30.41969,
+      50.45909
+    ],
+    "description": "Beresteiska, originally named Zhovtneva, welcomed passengers on 5 November 1971 at the edge of the Shevchenkivskyi district. Its modest 16-metre depth and wide side platforms provide quick access to the Ministry of Defence quarter and the nearby Kyiv TV centre.",
+    "branch": "red"
+  },
+  {
+    "name": "Shuliavska",
+    "coordinates": [
+      30.44537,
+      50.45508
+    ],
+    "description": "Shuliavska opened on 5 November 1963 under the name Zavod Bilshovyk to connect the aircraft plants and the Shuliavka industrial zone. The 92-metre-deep pylon layout doubles as a civil-defense shelter and links directly to the busy Shuliavskyi overpass interchange.",
+    "branch": "red"
+  },
+  {
+    "name": "Politekhnichnyi Instytut",
+    "coordinates": [
+      30.46613,
+      50.45079
+    ],
+    "description": "Politekhnichnyi Instytut debuted on 5 November 1963 to serve the Kyiv Polytechnic Institute campus sprawled along Peremohy Avenue. At 55 metres underground, the station's escalators surface inside the university courtyard, giving students an all-weather commute.",
+    "branch": "red"
+  },
+  {
+    "name": "Vokzalna",
+    "coordinates": [
+      30.490003353873735,
+      50.44127133843766
+    ],
+    "description": "Vokzalna is one of the original five stations that opened on 6 November 1960 and sits 42 metres below Kyiv-Pasazhyrskyi railway terminal. Direct passageways tie the metro concourse to long-distance train halls, so it functions as the city's primary rail-to-metro gateway.",
+    "branch": "red"
+  },
+  {
+    "name": "Universytet",
+    "coordinates": [
+      30.50461527977074,
+      50.44334264991407
+    ],
+    "description": "Universytet also opened on 6 November 1960 beneath Taras Shevchenko University and the same-named park. The 64-metre-deep pylon hall is lined with busts of Ukrainian scholars, turning the station into a miniature gallery for daily riders.",
+    "branch": "red"
+  },
+  {
+    "name": "Teatralna",
+    "coordinates": [
+      30.518056,
+      50.445278
+    ],
+    "description": "Teatralna entered service on 6 November 1987 when the Metro built an interchange to the future Zoloti Vorota station. Its 20-metre depth and spacious cross-passages are designed to handle theatre crowds as well as transfers between the red and green lines.",
+    "branch": "red"
+  },
+  {
+    "name": "Khreshchatyk",
+    "coordinates": [
+      30.522767783097787,
+      50.44723753330851
+    ],
+    "description": "Khreshchatyk opened with the system on 6 November 1960 and remains the red line's busiest hub thanks to its pedestrian tunnels toward Maidan Nezalezhnosti. The 20-metre-deep pylon station links directly to the blue line through long mezzanines that run under Kyiv's main boulevard.",
+    "branch": "red"
+  },
+  {
+    "name": "Arsenalna",
+    "coordinates": [
+      30.54556,
+      50.4444
+    ],
+    "description": "Arsenalna has been in service since 6 November 1960 and plunges 105.5 metres below the Pechersk hills, making it one of the deepest stations in the world. The station was named for the nearby Arsenal factory complex and requires two escalator flights to reach the surface.",
+    "branch": "red"
+  },
+  {
+    "name": "Dnipro",
+    "coordinates": [
+      30.559414569923753,
+      50.441204032241714
+    ],
+    "description": "Dnipro opened on 6 November 1960 at the western bank of the metro bridge, blending open-air platforms with a riverfront viaduct. Its partially elevated design offers sweeping views of the Dnipro River and once housed the original bridge depot.",
+    "branch": "red"
+  },
+  {
+    "name": "Hidropark",
+    "coordinates": [
+      30.576907245863822,
+      50.44597200592097
+    ],
+    "description": "Hidropark began operating on 5 November 1965 to serve the Venetsianskyi Island recreational zone. Built at surface level with a simple canopy, the station absorbs huge summer crowds headed to the beaches and amusement piers.",
+    "branch": "red"
+  },
+  {
+    "name": "Livoberezhna",
+    "coordinates": [
+      30.59817,
+      50.45186
+    ],
+    "description": "Livoberezhna also opened on 5 November 1965 as one of the Kyiv Metro's first left-bank stations. The at-grade design integrates with an adjacent bus terminal, feeding riders from the expanding Rusanivka and Livoberezhnyi housing estates.",
+    "branch": "red"
+  },
+  {
+    "name": "Darnytsia",
+    "coordinates": [
+      30.612953196812015,
+      50.45599447798862
+    ],
+    "description": "Darnytsia entered service on 5 November 1965 and became the main surface-level hub for the left bank. Located beside Brovary Avenue, the station connects to the Darnytsia suburban rail yard and dozens of trolleybus and tram routes.",
+    "branch": "red"
+  },
+  {
+    "name": "Chernihivska",
+    "coordinates": [
+      30.629722,
+      50.459722
+    ],
+    "description": "Chernihivska opened on 5 November 1968 (under the name Kommunistychna) to push the red line into the Desnianskyi district. The shallow surface platforms keep dwell time short for the constant stream of buses running toward Chernihiv highway communities.",
+    "branch": "red"
+  },
+  {
+    "name": "Lisova",
+    "coordinates": [
+      30.64597,
+      50.46476
+    ],
+    "description": "Lisova has served as the eastern terminus since 5 December 1979, when it opened as Pionerska near the city border. The 9-metre-deep station is paired with a massive bus depot and marketplace that channels commuters from Brovary and surrounding villages.",
+    "branch": "red"
+  },
+  {
+    "name": "Heroiv Dnipra",
+    "coordinates": [
+      30.4989,
+      50.52267
+    ],
+    "description": "Heroiv Dnipra opened on 6 November 1982 as the Obolon extension's northern terminus. The 6-metre-deep single-vault hall feeds directly into a covered bus terminal that gathers commuters from the northern suburbs and river marinas.",
+    "branch": "blue"
+  },
+  {
+    "name": "Minska",
+    "coordinates": [
+      30.498333,
+      50.512222
+    ],
+    "description": "Minska also began service on 6 November 1982 under Minsk Square, serving the heart of the Obolon residential district. Its 9-metre depth and generous mezzanine make it a natural entrance to the adjoining market and neighborhood promenades.",
+    "branch": "blue"
+  },
+  {
+    "name": "Obolon",
+    "coordinates": [
+      30.49822,
+      50.50153
+    ],
+    "description": "Obolon was commissioned on 19 December 1980 (under the name Prospekt Korniichuka) to anchor the first wave of high-rises near Obolonskyi Prospekt. The shallow 9-metre platforms connect straight to the district's shopping spine and scenic embankment paths.",
+    "branch": "blue"
+  },
+  {
+    "name": "Pochaina",
+    "coordinates": [
+      30.497778,
+      50.486667
+    ],
+    "description": "Pochaina opened on 19 December 1980 as Petrivka and was renamed in 2018 to honor the historic river arm nearby. The node sits only 7 metres below ground, linking the metro to suburban rail, the Pochaina bus hub, and Kyiv's biggest electronics markets.",
+    "branch": "blue"
+  },
+  {
+    "name": "Tarasa Shevchenka",
+    "coordinates": [
+      30.503611,
+      50.473889
+    ],
+    "description": "Tarasa Shevchenka (known as Horkoho until 1991) also debuted on 19 December 1980 to serve the Podil riverfront. The low, 7-metre-deep vault features bronze bas-reliefs of the poet and funnels riders toward the Rybalskyi Bridge industrial zone.",
+    "branch": "blue"
+  },
+  {
+    "name": "Kontraktova Ploshcha",
+    "coordinates": [
+      30.516667,
+      50.465278
+    ],
+    "description": "Kontraktova Ploshcha opened on 17 December 1976 beneath Kyiv's oldest mercantile square. The 19-metre-deep pillar-trispan is lined with Kyiv-Mohyla Academy motifs and provides direct access to the historic streets of Podil.",
+    "branch": "blue"
+  },
+  {
+    "name": "Poshtova Ploshcha",
+    "coordinates": [
+      30.524308,
+      50.45933
+    ],
+    "description": "Poshtova Ploshcha entered service on 17 December 1976 (then called Respublikanska) beside the funicular station and Dnipro embankment. At 13 metres deep, it gives tourists an immediate route from river cruises to the upper city.",
+    "branch": "blue"
+  },
+  {
+    "name": "Maidan Nezalezhnosti",
+    "coordinates": [
+      30.524923,
+      50.450352
+    ],
+    "description": "Maidan Nezalezhnosti opened on 17 December 1976 as Ploshcha Kalinina and now forms the blue line half of Kyiv's signature interchange. The 32-metre-deep pylon hall connects via long passageways to Khreshchatyk station on the red line and the capital's civic plaza.",
+    "branch": "blue"
+  },
+  {
+    "name": "Ploshcha Ukrainskykh Heroiv",
+    "coordinates": [
+      30.516944,
+      50.439444
+    ],
+    "description": "Ploshcha Ukrainskykh Heroiv (renamed from Lva Tolstoho in 2023) has operated since 6 November 1980 near Kyiv's theatre quarter. Sitting 52 metres underground, it links directly to Palats Sportu on the green line and the surrounding cultural venues.",
+    "branch": "blue"
+  },
+  {
+    "name": "Olimpiiska",
+    "coordinates": [
+      30.516605,
+      50.432131
+    ],
+    "description": "Olimpiiska opened on 19 December 1980 under Velyka Vasylkivska Street to serve the National Sports Complex. Its 26-metre depth and ribbed pylons mirror the stadium's profile and help marshal match-day crowds.",
+    "branch": "blue"
+  },
+  {
+    "name": "Palats Ukraina",
+    "coordinates": [
+      30.52131,
+      50.42068
+    ],
+    "description": "Palats Ukraina went into service on 19 December 1980 as Chervonoarmiiska, taking its present name after independence. At 96 metres below ground it is the deepest stop on the blue line, delivering audiences directly beneath the National Palace of Arts.",
+    "branch": "blue"
+  },
+  {
+    "name": "Lybidska",
+    "coordinates": [
+      30.524909649173303,
+      50.41400731599101
+    ],
+    "description": "Lybidska opened on 30 December 1984 beside the Lybid River valley and the Demiivska transport knot. The shallow 9-metre station interfaces with trolleybus depots today and is earmarked for a future connection to the planned Podilsko-Vyhurivska line.",
+    "branch": "blue"
+  },
+  {
+    "name": "Demiivska",
+    "coordinates": [
+      30.516860956097474,
+      50.404732512397366
+    ],
+    "description": "Demiivska began carrying passengers on 15 December 2010 beneath Demiivska Square. The 12-metre-deep island platform opens into the Central Bus Station, making it the preferred entry point for travelers arriving from southern Ukraine.",
+    "branch": "blue"
+  },
+  {
+    "name": "Holosiivska",
+    "coordinates": [
+      30.508149071241498,
+      50.39735863749775
+    ],
+    "description": "Holosiivska opened on 12 December 2010 near Holosiivska Square and the edge of Holosiivskyi National Nature Park. Its calm dark-green finishes reference the forested surroundings while the 12-metre depth keeps escalator rides short.",
+    "branch": "blue"
+  },
+  {
+    "name": "Vasylkivska",
+    "coordinates": [
+      30.488223,
+      50.393335
+    ],
+    "description": "Vasylkivska launched service on 15 December 2010 to serve the densely populated Vasylkivska Street corridor and nearby university dormitories. The 14-metre-deep hall uses warm ceramic panels to echo the late-Soviet residential architecture overhead.",
+    "branch": "blue"
+  },
+  {
+    "name": "Vystavkovyi Tsentr",
+    "coordinates": [
+      30.477536,
+      50.382581
+    ],
+    "description": "Vystavkovyi Tsentr opened on 27 December 2011 outside the National Expocenter of Ukraine (VDNH). The 12-metre-deep station was designed with wide concourses to process trade-show crowds and connects to the main exhibition gate via a pedestrian bridge.",
+    "branch": "blue"
+  },
+  {
+    "name": "Ipodrom",
+    "coordinates": [
+      30.468886,
+      50.3766
+    ],
+    "description": "Ipodrom entered service on 25 October 2012 along Akademika Hlushkova Avenue near the Kyiv racecourse. At 12 metres deep, it provides fast metro access to the hippodrome grandstands and the adjacent Ocean Plaza shopping corridor.",
+    "branch": "blue"
+  },
+  {
+    "name": "Teremky",
+    "coordinates": [
+      30.454037,
+      50.367
+    ],
+    "description": "Teremky has been the southern terminus since 6 November 2013, capping the line near the city's ring road and the Teremky-2 housing estates. The shallow 12-metre station doubles as a park-and-ride hub for traffic arriving from Odesa Highway.",
+    "branch": "blue"
+  },
+  {
+    "name": "Chervonyi Khutir",
+    "coordinates": [
+      30.694444,
+      50.408889
+    ],
+    "description": "Chervonyi Khutir opened on 23 May 2008 as the Syretsko–Pecherska line's southeastern terminus. The at-grade station edges a pine forest and doubles as a bus loop for the Bortnychi and Darnytskyi cottage settlements.",
+    "branch": "green"
+  },
+  {
+    "name": "Boryspilska",
+    "coordinates": [
+      30.684411,
+      50.403479
+    ],
+    "description": "Boryspilska began operating on 23 August 2005 along Kharkivske Highway, giving the left bank its first direct metro stop toward Boryspil Airport. The 14-metre-deep platforms sit beside a logistics park that dispatches airport shuttles and intercity coaches.",
+    "branch": "green"
+  },
+  {
+    "name": "Vyrlytsia",
+    "coordinates": [
+      30.666111,
+      50.403333
+    ],
+    "description": "Vyrlytsia opened on 8 March 2006 between two lakes of the same name, with tracks running on a causeway above the wetlands. The 12-metre-deep station is wrapped in glass windscreens to shield riders from the open steppe winds.",
+    "branch": "green"
+  },
+  {
+    "name": "Kharkivska",
+    "coordinates": [
+      30.652222,
+      50.400833
+    ],
+    "description": "Kharkivska has served the high-density Pozniaky–Kharkivskyi massif since 30 December 1994. Its shallow 12-metre concourse pours directly into Kharkivske Highway, where dozens of suburban buses toward Boryspil and Brovary depart.",
+    "branch": "green"
+  },
+  {
+    "name": "Pozniaky",
+    "coordinates": [
+      30.633333,
+      50.398056
+    ],
+    "description": "Pozniaky opened on 30 December 1994 beneath the central square of the Pozniaky housing district. The two-level station, about 12 metres deep, uses skylights to brighten the mezzanine and anchors one of Kyiv's busiest shopping clusters.",
+    "branch": "green"
+  },
+  {
+    "name": "Osokorky",
+    "coordinates": [
+      30.615833,
+      50.395556
+    ],
+    "description": "Osokorky has been in operation since 30 December 1994 and serves a rapidly growing cluster of high-rises along the Dnipro embankment. The 14-metre-deep hall features stylized river reeds and feeds pedestrian bridges that cross the highway.",
+    "branch": "green"
+  },
+  {
+    "name": "Slavutych",
+    "coordinates": [
+      30.604864,
+      50.394217
+    ],
+    "description": "Slavutych entered service on 30 December 1991 atop the flood-protection levee near the Paton Bridge. Because the platforms sit just 8 metres above the river, the station was engineered with watertight doors and quick access to the dam maintenance road.",
+    "branch": "green"
+  },
+  {
+    "name": "Vydubychi",
+    "coordinates": [
+      30.560833,
+      50.402222
+    ],
+    "description": "Vydubychi opened on 30 December 1991 and has since evolved into a major multimodal hub combining metro, suburban rail, long-distance buses, and the Kyiv Boryspil Express. The 12-metre-deep platforms are linked to terraced walkways cut into the hillside.",
+    "branch": "green"
+  },
+  {
+    "name": "Zvirynetska",
+    "coordinates": [
+      30.545,
+      50.418056
+    ],
+    "description": "Zvirynetska, renamed from Druzhby Narodiv in 2023, has been operating since 30 December 1991 beneath the Pechersk hills. Its 94-metre depth and slender pylons reflect the need to thread through hard granite while connecting to the Zvirynetskyi overpass.",
+    "branch": "green"
+  },
+  {
+    "name": "Pecherska",
+    "coordinates": [
+      30.540119,
+      50.426553
+    ],
+    "description": "Pecherska went live on 30 December 1997 to serve Kyiv's administrative quarter. The 26-metre station uses bronze accents and green marble to echo the nearby monasteries and parliament buildings.",
+    "branch": "green"
+  },
+  {
+    "name": "Klovska",
+    "coordinates": [
+      30.53192,
+      50.43693
+    ],
+    "description": "Klovska (called Mechnykova until 1991) opened on 31 December 1989 near Klov Palace and several embassies. At 53 metres deep, it relies on two escalator banks and narrow pylons to fit into the constrained urban block.",
+    "branch": "green"
+  },
+  {
+    "name": "Palats Sportu",
+    "coordinates": [
+      30.521519,
+      50.438371
+    ],
+    "description": "Palats Sportu has welcomed riders since 31 December 1989 beneath the National Sports Palace. Its 24-metre-deep hall provides a short interchange tunnel to Ploshcha Ukrainskykh Heroiv on the blue line, so event-goers can exit either network.",
+    "branch": "green"
+  },
+  {
+    "name": "Zoloti Vorota",
+    "coordinates": [
+      30.513333,
+      50.448333
+    ],
+    "description": "Zoloti Vorota opened on 31 December 1989 and is famous for its Kyiv Rus-inspired mosaics and chandeliers. Located 27 metres underground, it offers a cross-platform transfer to Teatralna and regularly appears on lists of the world's most beautiful metro stations.",
+    "branch": "green"
+  },
+  {
+    "name": "Lukianivska",
+    "coordinates": [
+      30.48194,
+      50.4625
+    ],
+    "description": "Lukianivska entered operation on 30 December 1996 to serve the namesake square and Kyiv TV tower foothills. The 50-metre-deep pylon hall shortens the future extension toward Podil and sits above a network of civil-defense tunnels.",
+    "branch": "green"
+  },
+  {
+    "name": "Dorohozhychi",
+    "coordinates": [
+      30.449167,
+      50.473611
+    ],
+    "description": "Dorohozhychi opened on 30 December 2000 just north of the Babyn Yar memorial park. The 22-metre station features somber granite walls that reference the site's history while serving tram and trolleybus routes along Melnykova Street.",
+    "branch": "green"
+  },
+  {
+    "name": "Syrets",
+    "coordinates": [
+      30.432792261054985,
+      50.47675462815944
+    ],
+    "description": "Syrets has acted as the northwestern terminus since 14 October 2004, when the line was extended under the Syrets arboretum. The 44-metre-deep pylon station includes a reversing siding for future trains toward Vynohradar.",
+    "branch": "green"
+  }
+]
