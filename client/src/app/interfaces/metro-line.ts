@@ -4,5 +4,5 @@ export interface MetroLine {
   name: string;
   color: string;
   coordinates: [number, number][];
-  subwayStations: SubwayStation[];
+  subwayStations?: SubwayStation[];
 }

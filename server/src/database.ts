@@ -12,15 +12,15 @@ export async function connectToDatabase(uri: string) {
   const db = client.db('meanStackMapApp');
   await applySchemaValidation(db);
 
-  const employeesCollection = db.collection<Station>('employees');
-  collections.stations = employeesCollection;
+  const stationsCollection = db.collection<Station>('stations');
+  collections.stations = stationsCollection;
 }
 
 async function applySchemaValidation(db: mongodb.Db) {
   const jsonSchema = {
     $jsonSchema: {
       bsonType: "object",
-      required: ["name", "position", "level"],
+      required: ["name", "description", "coordinates", "branch"],
       additionalProperties: false,
       properties: {
         _id: {},
@@ -28,15 +28,24 @@ async function applySchemaValidation(db: mongodb.Db) {
           bsonType: "string",
           description: "'name' is required and is a string",
         },
-        position: {
+        description: {
           bsonType: "string",
-          description: "'position' is required and is a string",
-          minLength: 5
+          description: "'description' is required and is a string",
         },
-        level: {
+        coordinates: {
+          bsonType: "array",
+          description: "'coordinates' is required and must be [lng, lat]",
+          minItems: 2,
+          maxItems: 2,
+          items: {
+            bsonType: ["double", "int", "long", "decimal"],
+            description: "each coordinate must be numeric"
+          }
+        },
+        branch: {
           bsonType: "string",
-          description: "'level' is required and is one of 'junior', 'mid', or 'senior'",
-          enum: ["junior", "mid", "senior"],
+          description: "'branch' is required and is one of 'green', 'red', or 'blue'",
+          enum: ["green", "red", "blue"],
         },
       },
     },
@@ -44,11 +53,11 @@ async function applySchemaValidation(db: mongodb.Db) {
 
   // Try applying the modification to the collection, if the collection doesn't exist, create it
   await db.command({
-    collMod: "employees",
+    collMod: "stations",
     validator: jsonSchema
   }).catch(async (error: mongodb.MongoServerError) => {
     if (error.codeName === "NamespaceNotFound") {
-      await db.createCollection("employees", {validator: jsonSchema});
+      await db.createCollection("stations", { validator: jsonSchema });
     }
   });
 }

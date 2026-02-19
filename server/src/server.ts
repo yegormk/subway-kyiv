@@ -2,25 +2,25 @@ import * as dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import { connectToDatabase } from './database';
-import { employeeRouter } from './employee.routes';
+import { stationRouter } from './station.routes';
 
 // Load environment variables from the .env file, where the ATLAS_URI is configured
 dotenv.config();
 
-const { ATLAS_URI } = process.env;
+const uri = process.env.MONGODB_ATLAS || process.env.MONGODB_URL;
 
-if (!ATLAS_URI) {
+if (!uri) {
   console.error(
-    "No ATLAS_URI environment variable has been defined in config.env"
+    "No uri environment variable has been defined in config.env"
   );
   process.exit(1);
 }
 
-connectToDatabase(ATLAS_URI)
+connectToDatabase(uri)
   .then(() => {
     const app = express();
     app.use(cors());
-    app.use("/employees", employeeRouter);
+    app.use("/stations", stationRouter);
 
     // start the Express server
     app.listen(3000, () => {
